@@ -1,0 +1,101 @@
+.usuario{
+	margin: 2% 3% 0;
+	text-align: center;
+}
+
+.icono-usuario {
+	width: 60%;
+	margin: auto auto;
+	display: block;
+}
+
+.desconectar{
+	margin-top: 5%;
+	text-align: center;
+	display: block;
+}
+
+nav {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #f1f1f1;
+	width: 100%;
+}
+
+li {
+ 	float: left;
+}
+
+li a {
+	display: block;
+	color: #000;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a.active {
+	background-color: #000046;
+	color: white;
+	text-decoration: none;
+}
+
+li a:hover:not(.active) {
+	background-color: #00b9ff;
+	color: white;
+	text-decoration: none;
+}
+
+
+.img-relacionada-2{
+	float: left;
+	width: 50%;
+}
+
+.img-relacionada-2 img{
+	width: 90%;
+}
+
+/*Icono de conexión con proporciones fijas*/
+@media (min-width: 901px){
+	.conexion-icon {
+		width: 25px;
+		height: 25px;
+	}  
+}
+
+@media (min-width: 769px) and (max-width: 900px){
+	.header-right {
+    	font-size: 1.7vw;
+    }
+}
+
+@media (max-width: 768px){
+	.titulo-web, .conexion-icon, .conexion{
+		display: none;
+	}
+
+	.header-right {
+    	width: 25%;
+    }
+}
+
+@media (max-width: 545px){
+	.header-right {
+    	font-size: 2vw;
+    }
+}
+
+@media (max-width: 480px){
+	.header-right {
+    	font-size: 2.5vw;
+    }
+}

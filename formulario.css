@@ -1,0 +1,119 @@
+form{
+	margin: 0 20%;
+}
+
+fieldset{
+	margin: 10px 0;
+	border: 0;
+	padding: 0;
+}
+
+legend{
+	text-transform: uppercase;
+	font-size: 110%;
+	font-weight: bold;
+	padding-bottom: 3px;
+	border-bottom: 1px solid #000046;
+	width: 100%;
+}
+
+ol{
+	list-style-type: none;
+	margin: 0 2%;
+}
+
+label{
+	float: left;
+	width: 20%;
+	margin: 10px 20px 0;
+}
+
+input[type=file]{
+	width: 50%;
+	margin: 7px 18px;
+}
+
+input, select{
+	float: left;
+	width: 30%;
+	margin: 5px;
+}
+
+.form-item-1:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.form-item-2{
+	float: left;
+}
+
+.form-item-2 label{
+	width: 100%;
+}
+
+.form-item-3 label{
+	width: 100%;
+}
+
+.form-item-3 input{
+	width: 80%;
+	margin: 1% 2%;
+}
+
+.foto-form {
+    position: relative;
+    bottom: 120px;
+    right: 80px;
+    width: 18%;
+    padding: 2% 0;
+    border: 1px solid #000046;
+    float: right;
+}
+
+.valoracion{
+	float: left;
+	margin: 5px 20px;
+}
+
+.valoracion-leido {
+    content: "";
+    clear: both;
+    display: table;
+    margin-bottom: 2%;
+}
+
+textarea{
+	width: 90%;
+	margin: 5px 20px;
+}
+
+span#current {
+    margin: 0 0 0 3%;
+}
+
+.nota, input[type=radio]{
+	width: auto;
+	margin: 0 5px;
+}
+
+input[type=submit]{
+	margin: 40px 100px 20px;
+	float: left;
+	width: 20%;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 8px;
+	background-color: #c2c2c2;
+	color: black;
+	font-weight: bold;
+	font-size: 90%;
+	text-align: center;
+}
+
+input[type=submit]:hover{
+	background-color: #000046;
+    color: white;	
+}

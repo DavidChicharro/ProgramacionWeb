@@ -1,0 +1,99 @@
+.datos-libro{
+	content: "";
+	clear: both;
+	display: table;
+	width: 90%;
+	padding: 1% 5%;
+}
+
+.portada-libro{
+	float: left;
+	width: 12%;
+	padding-left: 5%;
+	margin-top: 10px;
+	overflow: hidden;
+}
+
+.caracteristicas-libro{
+	float: left;
+	width: 50%;
+	padding: 4% 3%;
+	margin-top: 10px;
+}
+
+.descripcion{
+	display: inline-block;
+	padding: 3% 5% 0;
+	text-align: justify;
+}
+
+.nota-media{
+	font-size: 105%;
+	font-weight: bold;
+	border-bottom: solid 2px black;
+	margin-top: 3%;
+}
+
+.img-miniatura{
+	float: left;
+	width: 100%;
+}
+
+.opiniones{
+	padding: 0 9%;
+}
+
+.malla-opiniones{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	padding: 1%;
+	grid-gap: 20px 5%;
+}
+
+.malla-opiniones article{
+	background-color: #e4f1f2; /*Se mantiene por si no lo soporta el navegador*/
+	background-image: linear-gradient(to bottom, lightblue , #e4f1f2);
+	margin: 1%;
+	padding: 3%;
+	text-align: justify;
+}
+
+.centrado{
+	text-align: center;
+}
+
+.pagination{
+	display: inline-block;
+	margin: 1%;
+}
+
+.pagination a{
+	color: #000046;
+	float: left;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+
+.pagination a.active {
+	background-color: #000046;
+	color: white;
+	border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+	background-color: #00b9ff;
+	color: white;
+	border-radius: 5px;
+}
+
+.opinion-valoracion{
+	padding: 0 9%;
+}
+
+.opinion-valoracion h3{
+	margin-left: 6px;
+}
+
+.opinion-valoracion form{
+	margin: 0 30% 0 0;
+}

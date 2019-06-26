@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>RecomenBook</title>
+		<link rel="icon" type="image/png" href="imagenes/icono.png" sizes="16x16">
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<script src="js/encrypt.js" type="text/javascript"></script>
+		<script src="js/validacion.js" type="text/javascript"></script>
+	</head>
+
+	<body>
+		<header>
+			<a class="link-logo" href="index.html">
+				<img class="header-logo" src="imagenes/logo.png" alt="Logo">
+			</a>
+
+			<h1 class="titulo-web">RecomenBook</h1>
+
+			<!--Formulario de acceso-->
+			<section class="form-acceso">
+				<form name="formLogin" action="login.php" id="access_form" method="post" onsubmit="encryptPswd('password')" onkeyup="formLoginValidation(this)">
+					<label class="user-form" for="email">Usuario</label><br>
+					<input type="text" id="email" name="email" required><br>
+
+					<label class="pass-form" for="password">Contraseña</label><br>
+					<input type="password" id="password" name="password" minlength="8"  required><br>
+				</form>
+				<input type="submit" id="botonEnviar" value="Acceder" form="access_form" disabled onload="formLoginValidation('formLogin')">
+				<a class="registro" href="altausuario.html">Regístrate</a>
+			</section>
+		</header>
+
+		<main>
+			<!--Imágenes relacionadas con la web-->
+			<section class="img-relacionada">
+				<ul>
+					<li>
+						<img src="imagenes/libros_portada-1.jpg" alt="Imagen portada 1">
+					</li>
+
+					<li>
+						<img src="imagenes/libros_portada-2.jpg" alt="Imagen portada 2">
+					</li>
+
+					<li>
+						<img src="imagenes/libros_portada-3.png" alt="Imagen portada 3">
+					</li>
+				</ul>
+			</section>
+
+			<!--Sección con los libros mejor valorados-->
+			<section class="mejores-libros">
+				<h2>Libros mejor valorados</h2>
+
+				<article class="libro">
+					<img class="img-miniatura" src="imagenes/libro-9788420641942.jpeg" alt="El jugador">
+					<article class="libro-autor">
+						<p class="titulo-libro">El jugador</p>
+						<p class="autor">Fiódor Dostoyevski</p>
+					</article>
+				</article>
+
+				<article class="libro">
+					<img class="img-miniatura" src="imagenes/libro-9788408205692.jpeg" alt="El puzzle de cristal">
+					<article class="libro-autor">
+						<p class="titulo-libro">El puzzle de cristal</p>
+						<p class="autor">Blue Jeans</p>
+					</article>
+				</article>
+
+				<article class="libro">
+					<img class="img-miniatura" src="imagenes/libro-9788420651361.jpeg" alt="La metamorfosis">
+					<article class="libro-autor">
+						<p class="titulo-libro">La metamorfosis</p>
+						<p class="autor">Kafka</p>
+					</article>
+				</article>
+
+				<article class="libro">
+					<img class="img-miniatura" src="imagenes/libro-9788483462034.jpeg" alt="La casa de los espíritus">
+					<article class="libro-autor">
+						<p class="titulo-libro">La casa de los espíritus</p>
+						<p class="autor">Isabel Allende</p>
+					</article>
+				</article>
+			</section>
+		</main>
+
+		<footer>
+			<a href="mailto:davidcch@correo.ugr.es">Contacto</a>
+			<span>&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;</span>
+			<a href="como_se_hizo.pdf" target="_blank">Cómo se hizo</a>
+		</footer>
+
+	</body>
+</html>

@@ -1,0 +1,37 @@
+ul.lista-recom{
+	margin: 2% 5%;
+	width: 90%;
+	background-color: transparent;
+}
+
+li.elem-recom{
+	margin: 1% 2%;
+}
+
+li.elem-recom a {
+	display: inherit;
+	width: 190px;
+	height: 350px;
+	margin: 1% 2%;
+}
+
+li a:hover:not(.active) {
+	background-color: #00b9ff;
+	opacity: 0.7;
+}
+
+.link-libro {
+    font-size: 115%;
+    padding: 2%;
+    text-align: center;
+    color: #000046;
+}
+
+.img-recom{
+	height: 80%;
+}
+
+p.titulo {
+	margin: 0;
+	text-align: center;
+}

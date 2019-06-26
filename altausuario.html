@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+	<html lang="es">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Registro | RecomenBook</title>
+		<link rel="icon" type="image/png" href="imagenes/icono.png" sizes="16x16">
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<link rel="stylesheet" type="text/css" href="altausuario.css">
+		<script src="js/encrypt.js" type="text/javascript"></script>
+		<script src="js/validacion.js" type="text/javascript"></script>
+	</head>
+
+	<body>
+		<main class="todo">
+			<!--Sección izquierda de bienvenida -->
+			<section class="izq-pag">
+				<a class="link-logo-alta" href="index.html">
+					<img src="imagenes/logo.png" class="logo" alt="Logo">
+				</a>
+
+				<article class="bienvenida">
+					<ul>
+						<li>Te recomendamos los mejores libros</li>
+						<li>Disfruta compartiendo tus lecturas</li>
+						<li>Descubre nuevos mundos con otros usuarios</li>
+					</ul>
+				</article>
+			</section>
+
+			<!--Sección derecha de registro -->
+			<section class="dcha-pag">
+				<hgroup>
+					<h2>Regístrate</h2>
+					<h3>Empieza a disfrutar de nuestro contenido</h3>
+				</hgroup>
+
+				<form name="formAltaUsuario" action="altausuario.php" method="post" enctype="multipart/form-data" onsubmit="encryptPswd('password')" onkeyup="formValidation(this)">
+					<input type="file" id="imagen" name="foto">					
+					<input type="text" id="nombre" name="nombre" placeholder="Nombre" minlength="2" maxlength="25" onblur="formElemValidation('nombre')" required><br>
+					<input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" minlength="3" maxlength="60" onblur="formElemValidation('apellidos')" required><br>
+					<input type="email" id="email" name="email" placeholder="Email" required onblur="formElemValidation('email'); emailValidation('formAltaUsuario');"><br>
+					<input type="password" id="password" name="password" placeholder="Contraseña" minlength="8" required onkeyup="check(); passValidation('formAltaUsuario');"><br>
+					<input type="password" id="passRepetir" name="passRepetir" placeholder="Repite la contraseña" minlength="8" required onkeyup="check()"><br>
+
+					<label for="fNacimiento">Fecha de nacimiento</label><br>
+					<input type="date" id="fNacimiento" name="fecha_nac" min="1902-01-01" max="2019-12-31" onblur="fechValidation()" required><br>
+
+					<input class="btn-disabled" type="submit" id="btnCrearCuenta" value="Crear cuenta" disabled>
+				</form>
+			</section>
+		</main>
+
+		<footer>
+			<a href="mailto:davidcch@correo.ugr.es">Contacto</a>
+			<span>&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;</span>
+			<a href="como_se_hizo.pdf" target="_blank">Cómo se hizo</a>
+		</footer>
+
+	</body>
+</html>

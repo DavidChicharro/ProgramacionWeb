@@ -1,0 +1,125 @@
+table{
+	border-collapse: collapse;
+	border-radius: 5px;
+	margin: 1% 10%;
+	padding: 8px;
+	background-color: #e4f1f2;
+	width: 80%;
+}
+
+.tema{
+	border-left: 10px solid #000046;
+	border-right: 10px solid #000046;
+	margin: 1% 10% 4%;
+}
+
+.fecha-hilo-2, .creador-hilo{
+	width: 17%;
+}
+
+.orden-respuesta, .cont-hilo{
+	width: 83%;
+}
+
+.fecha-hilo-2, .orden-respuesta{
+	border-bottom: 1px solid #000046;
+	padding: 2px 0 0 2px;
+}
+
+.creador-hilo, .cont-hilo{
+	border-top: 1px solid #000046;
+}
+
+.fecha-hilo-2{
+	text-align: left;
+	font-size: 80%;
+}
+
+.orden-respuesta{
+	text-align: right;
+	font-size: 95%;
+	padding-right: 1%;
+}
+
+.creador-hilo{
+	background-color: #b7c7c7;
+	text-align: center;
+}
+
+.creador-hilo img{
+	height: 100px;
+}
+
+.fecha-registro{
+	font-size: 85%;
+}
+
+.cont-hilo{
+	text-align: justify;
+	vertical-align: top;
+	padding: 0 2% 0 1%;
+}
+
+h3{
+	font-size: 90%;
+	border-bottom: 1px solid #000046;
+}
+
+form{
+	margin: 5% 10%;
+}
+
+fieldset{
+	margin: 1%;
+	border: 0;
+	padding: 0;
+}
+
+legend{
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-bottom: 3px;
+	border-bottom: 1px solid #000046;
+}
+
+textarea{
+	width: 75%;
+	margin: 1% 0;
+}
+
+input{
+	margin: 1%;
+	float: left;
+	width: 12%;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 8px;
+	background-color: #c2c2c2;
+	color: black;
+	font-weight: bold;
+	font-size: 90%;
+	text-align: center;
+}
+
+input:hover, .btn-respuesta:hover{
+	text-decoration: none;
+	background-color: #000046;
+    color: white;	
+}
+
+.btn-respuesta{
+	margin: 1% 10%;
+	width: 7%;
+	min-width: 65px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 8px;
+	background-color: #c2c2c2;
+	color: black;
+	font-weight: bold;
+	font-size: 90%;
+	display: block;
+	text-align: center;
+}

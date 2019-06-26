@@ -1,0 +1,56 @@
+table, td, th{
+	border-collapse: collapse;
+	border-radius: 5px;
+	margin: 1% 10%;
+	width: 80%;
+	padding: 8px;
+	background-color: #e4f1f2;
+}
+
+
+.btn-crear-hilo{
+	margin: 1% 10%;
+	width: 8%;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 8px;
+	background-color: #c2c2c2;
+	color: black;
+	font-weight: bold;
+	font-size: 90%;
+	display: block;
+	text-align: center;
+}
+
+.btn-crear-hilo:hover{
+	text-decoration: none;
+	background-color: #000046;
+    color: white;	
+}
+
+.fecha-hilo, .num-respuestas{
+	text-align: right;
+	color: #000046;
+	width: 15%;
+}
+
+.fecha-hilo{
+	font-size: 80%;
+}
+
+.titulo-hilo{
+	text-align: left;
+}
+
+.creador-hilo, .fecha-hilo{
+	border-bottom: 1px dashed #000046;
+}
+
+.titulo-hilo, .num-respuestas{
+	border-top: 1px dashed #000046;
+}
+
+.cont-hilo{
+	text-align: justify;
+}
